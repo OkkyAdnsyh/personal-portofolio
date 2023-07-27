@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@500;700;900&display=swap");
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("/public/neue-montreal/neuemontreal-light-webfont.woff2") format("woff2"), url("/public/neue-montreal/neuemontreal-light-webfont.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("/public/neue-montreal/neuemontreal-medium-webfont.woff2") format("woff2"), url("/public/neue-montreal/neuemontreal-medium-webfont.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("/public/neue-montreal/neuemontreal-regular-webfont.woff2") format("woff2"), url("/public/neue-montreal/neuemontreal-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("/public/neue-montreal/neuemontreal-bold-webfont.woff2") format("woff2"), url("/public/neue-montreal/neuemontreal-bold-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+:root {
+  --primary-color: #121010;
+  --sec-color: #EFE9E9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+main .banner-section {
+  width: 100%;
+  height: 100dvh;
+  background: var(--primary-color);
+  padding: 3.6rem 6.4rem;
+}
+main .banner-section .title-container {
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  border-bottom: solid 2px var(--sec-color);
+}
+main .banner-section .title-container h1 {
+  font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 900;
+  font-size: 9.6rem;
+  color: var(--sec-color);
+}
+main .banner-section .text-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 3.2rem;
+  margin-top: 2.7rem;
+}
+main .banner-section .text-container h2 {
+  font-family: "Neue Montreal", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 3.6rem;
+  color: var(--sec-color);
+}
+main .banner-section .text-container .project-list,
+main .banner-section .text-container .tech-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+main .banner-section .text-container .project-list li p,
+main .banner-section .text-container .tech-list li p {
+  font-family: "Lato", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  color: var(--sec-color);
+}
+main .banner-section .banner-footer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 3.2rem;
+}
+main .banner-section .banner-footer .checkerboard {
+  width: 26rem;
+  height: 26rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 0.9rem;
+}
+main .banner-section .banner-footer .checkerboard span {
+  width: 100%;
+  height: 100%;
+}
+main .banner-section .banner-footer .checkerboard span:nth-child(even) {
+  background: var(--sec-color);
+}
+main .banner-section .banner-footer .footer-textbox {
+  width: auto;
+  height: 26rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4.2rem;
+}
+main .banner-section .banner-footer .footer-textbox .pg {
+  font-family: "Lato", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  color: var(--sec-color);
+  width: 90%;
+}
+main .banner-section .banner-footer .footer-textbox a {
+  padding: 1rem 2rem 1rem 2.4rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  border: solid 2px var(--sec-color);
+}
+main .banner-section .banner-footer .footer-textbox a p {
+  font-family: "Lato", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: var(--sec-color);
+}
+main .banner-section .banner-footer .svg-accent {
+  margin-left: auto;
+  width: auto;
+  height: 26rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+main .banner-section .banner-footer .svg-accent svg {
+  animation: rotate 3s linear infinite forwards;
+}
+main .about-section {
+  width: 100%;
+  height: 100dvh;
+  padding: 3.6rem 6.4rem;
+  background: var(--primary-color);
+}
+main .about-section .pg-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1.2rem;
+}
+main .about-section .pg-container p {
+  font-family: "Lato", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: var(--sec-color);
+}
+main .about-section .pg-container p:last-child {
+  width: 35%;
+}
+main .about-section .svg-accent {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+main .about-section .svg-accent svg {
+  animation: rotate 3s linear infinite forwards;
+}
+main .about-section .link-container {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 3.2rem 2.4rem;
+  gap: 1.6rem;
+  border: solid 2px var(--sec-color);
+  margin-top: 4.8rem;
+}
+main .about-section .link-container .main {
+  font-family: "Neue Montreal", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 3.6rem;
+  color: var(--sec-color);
+}
+main .about-section .link-container a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.8rem;
+  text-decoration: none;
+}
+main .about-section .link-container a p {
+  font-family: "Neue Montreal", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  font-size: 2.4rem;
+  color: var(--sec-color);
+}
+main .about-section .title-container {
+  width: -moz-fit-content;
+  width: fit-content;
+  height: auto;
+  padding: 1rem;
+  border-bottom: solid 2px var(--sec-color);
+  margin-top: 3.6rem;
+}
+main .about-section .title-container h2 {
+  font-family: "Montserat", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 900;
+  font-size: 9.6rem;
+  color: var(--sec-color);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}/*# sourceMappingURL=global.css.map */
